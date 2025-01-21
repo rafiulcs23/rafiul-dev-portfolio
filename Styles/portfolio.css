@@ -7,6 +7,9 @@
     "wdth" 100;
 }
 /* shared style */
+.text-center{
+    text-align: center;
+}
 
 .secondary-bg{
     background-color: #FFF8F3;
@@ -40,6 +43,11 @@
     padding: 18px 35px;
     border: none;
 }
+.btn-primary:hover {
+    background-color: dodgerblue; /* Change background color on hover */
+    border: 2px solid #fff;    /* Add a border on hover */
+  }
+
 
 .header{
     background-image: url(../images/developer.png), url(../images/header_bg.png) ;
@@ -52,7 +60,7 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 50px 200px;
+    margin: 0 200px;
 }
 .nav-title{
     font-weight: 800;
@@ -70,6 +78,12 @@ nav li a {
     text-decoration: none;
     font-size: 20px;
 }
+.nav-button{
+    display: flex;
+    gap: 10px;
+}
+
+
 /* banner styles */
 .banner{
     display: flex;
@@ -96,13 +110,16 @@ main{
     margin: 0 auto;
 }
 
+main section{
+    margin-top: 130px;
+    margin-bottom: 130px;
+}
 
 /* About Styles */
 .about{
     border-radius: 10px;
     padding: 130px;
     text-align: center;
-    margin-top: 130px;
 }
 .about-items{
     display: flex;
@@ -111,4 +128,65 @@ main{
 
 .item-description{
     font-weight: bold;
+} 
+.skills-container{
+    display: flex;
+    gap: 24px;
+}
+.skill{
+    padding: 30px;
+    box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.06);
+}
+/* Skills Styles */
+
+.resume-container{
+    display: flex;
+    gap:   24px;
+}
+.experience-description, .experience-sub-title{
+    color: #757575;
+}
+.experience-sub-title{
+    font-size: 20px;
+    font-weight: 600px;
+    margin-bottom: 20;
+}
+.experience-title{
+    font-size: 25px;
+    font-weight: bold;
+}
+.resume-column-title{
+    font-size: 30px;
+}
+.resume hr{
+    margin-top: 30px;
+}
+.resume-download-cv{
+    margin-top: 50px;
+}
+
+/* footer styles */
+footer{
+    display: flex;
+    padding: 130px 230px;
+    gap: 100px;
+
+}
+
+.social-icon{
+    height: 45px;
+    width: 45px;
+    gap: 15px;
+}
+.footer-column{
+    width: 50%;
+}
+footer input[type="text"], footer input[type="email"], footer textarea{
+    height: 64px;
+    border-radius: 5px;
+    border: none;
+    display: block;
+    width: 100%;
+    padding: 10px 20px;
+    margin-bottom: 24px;
 }
